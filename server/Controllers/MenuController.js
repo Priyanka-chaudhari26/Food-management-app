@@ -52,3 +52,13 @@ module.exports.Menu = async (req, res, next) => {
         res.status(500).json({ message: "Server Error" });
     }
 }
+
+module.exports.Category = async (req,res) => {
+    try {
+        const categories = await Menumodel.distinct("category"); 
+        console.log(categories);
+        return res.status(200).json(categories);
+      } catch (err) {
+        return res.status(500).json({ error: "Failed to fetch categories" });
+      }
+    };

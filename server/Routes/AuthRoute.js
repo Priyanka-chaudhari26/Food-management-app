@@ -1,8 +1,9 @@
 const { Signup, Login} = require("../Controllers/AuthController");
 const {userVerification } = require("../Middlewares/AuthMiddleware");
-const {Menu} = require("../Controllers/MenuController");
+const {Menu,Category} = require("../Controllers/MenuController");
 const {Order, Orders} = require("../Controllers/OrderController");
 const {User} = require("../Controllers/UserController");
+
 const router = require("express").Router();
 
 router.post("/signup", Signup);
@@ -18,4 +19,6 @@ router.route('/menu/:id')
     .delete(userVerification, Menu); 
 router.post('/order', userVerification, Order);
 router.get('/orders', userVerification, Orders);
+router.get('/categories', userVerification, Category);
+
 module.exports = router;
