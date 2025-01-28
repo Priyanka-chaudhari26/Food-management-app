@@ -18,7 +18,7 @@ The **Food Ordering System**: Backend API with Node.js and Frontend Dashboard wi
 ### Project Setup
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/Priyanka-chaudhari26/full-stack-task-management-app/)
+   git clone https://github.com/Priyanka-chaudhari26/full-stack-task-management-app/
    cd client
    cd craftsfrontapp
    ```
@@ -75,18 +75,23 @@ The frontend will run on `http://localhost:3000/` by default.
 The backend will run on `http://localhost:4000/` by default.
 
 ### API Documentation
-User Auth Endpoints:
-`POST "http://localhost:4000/signup"` - To register user
-`POST "http://localhost:4000/login"` - To login user
-`POST "http://localhost:4000/user"` - To get verified user
-`GET "http://localhost:4000/menu"` - To get all the menu items.
-`GET "http://localhost:4000/categories"` - To get all the categories present in menu model.
-`POST "http://localhost:4000/menu"` - To add a new menu item
-``PUT `http://localhost:4000/menu/${id}` `` - To update a particular menu item.
-``DELETE `http://localhost:4000/menu/${id}` `` - To delete a particular menu item.
-`POST "http://localhost:4000/order"` - To Place the order
-`GET "http://localhost:4000/orders"` - To get all the previous orders
-## Assumptions, Challenges, and Limitations
+
+#### User Auth Endpoints:
+- `POST "http://localhost:4000/signup"` - To register a user.
+- `POST "http://localhost:4000/login"` - To log in a user.
+- `POST "http://localhost:4000/user"` - To get verified user data.
+
+#### Menu Endpoints:
+- `GET "http://localhost:4000/menu"` - To get all the menu items.
+- `GET "http://localhost:4000/categories"` - To get all the categories in the menu model.
+- `POST "http://localhost:4000/menu"` - To add a new menu item.
+- ``PUT `http://localhost:4000/menu/${id}` `` - To update a particular menu item.
+- ``DELETE `http://localhost:4000/menu/${id}` `` - To delete a particular menu item.
+
+#### Order Endpoints:
+- `POST "http://localhost:4000/order"` - To place an order.
+- `GET "http://localhost:4000/orders"` - To get all previous orders.
+
 
 ### Challenges
 - **Integration Issues**: Initial challenges in integrating JWT authentication with the React frontend.
