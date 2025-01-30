@@ -100,7 +100,6 @@ The backend will run on `http://localhost:4000/` by default.
 
 ### Future Scope
 - Filter menu items by category feature on frontend.
-- Place order API endpoint is defined in backend but it is not fully implemented on frontend part. 
 
 
 ---
