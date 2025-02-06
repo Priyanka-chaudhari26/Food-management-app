@@ -18,7 +18,7 @@ The **Food Ordering System**: Backend API with Node.js and Frontend Dashboard wi
 ### Project Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Priyanka-chaudhari26/full-stack-task-management-app/
+   git clone https://github.com/Priyanka-chaudhari26/Food-management-app/
    cd client
    cd craftsfrontapp
    ```
