@@ -1,4 +1,4 @@
-# Task Management App
+# Food Management App
 
 ## Project Description
 The **Food Ordering System**: Backend API with Node.js and Frontend Dashboard with React.js
